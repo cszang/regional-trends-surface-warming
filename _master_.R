@@ -33,13 +33,9 @@ source("munge/data.R")
 ## Correlation test of MEI time series with gridded temp products;
 ## results are cached to mei_[dataset]
 ## @duration 5'
-## TODO for the revision, this procedure has to change!
-## TODO we need to account for spatial correlation bias (@José)
-## TODO (really? we are not correlation *two* spatial patterns here!
 ## MEI is a single time series, only the climate is spatial data)
 ## Added FDR correction for multile testing
 
-## TODO we need to adapt the method for interpolation:
 ## try an even more continuous approach w/o significance threshold;
 ## and only use modelled values for 97/98
 source("analysis/elnino.R")
